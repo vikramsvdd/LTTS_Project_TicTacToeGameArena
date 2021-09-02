@@ -1,6 +1,6 @@
 # Requirements
 ## Introduction
-* This project is a Tic Tac Toe Game, created using C language, designed and employed for a simple console application.
+* This project is a Tic Tac Toe Game, created using python programming  language, designed and employed for a simple console application.
 
 * Tic Tac Toe is a two player game, played on a 3x3 grid. Each player gets a chance to place a mark in any position in the grid using any of the two symbols( X or 0 ). The player who has first formed a horizontal, vertical or diagonal sequence of three symbols emerges victorious.
 
