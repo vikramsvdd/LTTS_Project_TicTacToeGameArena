@@ -13,9 +13,9 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+SF Id. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-266453` | Vikram Vasudevan  | F_01, F_02, F_03 |     |  | 6 |  6   
+266453` | Vikram Vasudevan  | F_01, F_02, F_03 |  0   |0  | 6 |  6   
 
 | Feature Id | Feature |
 | -----------|---------|
