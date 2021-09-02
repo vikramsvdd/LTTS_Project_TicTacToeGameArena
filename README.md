@@ -28,7 +28,7 @@ SF Id. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 |-----|-----------|--------
 |1. | Output was not matching the expectation | Modified the logic of the program and code itself 
 |2. | Game suddenly gets exited in the middle | Modified a segment of the code and eliminated the usage of conio.h |
-|3. | Error while Building the makefile | Trial and Error and referred Mini Project Template
+
 
 ## Reference
 The above code was taken from sampling several sites such as ADVLEARNING.com, medium.com, github,youtube and azaz.com . My contributions to the code have been mentioned above and errors in the original code have been rectified. Let me provide the references below
