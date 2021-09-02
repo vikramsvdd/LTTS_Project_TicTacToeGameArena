@@ -4,13 +4,13 @@
 
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  H_01|Display of Menu| None | "Menu(1).Tic Tac Toe(2).player 1 (X) player 2 (O)(3)board(4)player 1 or 2(alternate fashion)Enter the choice | PASS | Scenario|
+|  H_01|Display of Menu| None | "Menu(1).Tic Tac Toe(2).player (X) player (O)(3)board(4)player 1 or 2(alternate fashion)Enter the choice | PASS | Scenario|
 |  H_02|Initiation of the game |The assigned player must first choose the position to place his symbol | The Board gets updated and asks for next person to provide input| PASS | Requirement based |
 |  H_03|Show Board | Updates the marks on the board| Displays the progress of the game |SUCCESS|Requirement based |
 | H_03_01| Draw| Checking if the game will encounter a draw situation| Displays that the Game has been drawn | SUCCESS | Requirement based |
 | H_03_02| Win | Checking if the game will encounter a win situation| Displays that the Game has been won and the player who has achieved the feat | SUCCESS | Requirement based |
 | H_03_03| In Progress | Checking if the game is still in progress| Displays that the Game is still continuing | SUCCESS | Requirement based |
-| H_04| Check if irrelevant positions are eliminated (other than 1 to 9) | Say enter "ss" | Displays Invalid option |SUCCESS| Scenario |
+
 
 
 
