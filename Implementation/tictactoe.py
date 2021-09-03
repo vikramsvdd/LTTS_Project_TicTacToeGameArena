@@ -1,158 +1,145 @@
-#  The code Below is a code for implementing  a TIC_TAC_TOE game using the Object Oriented Concepts. The language used is Python. Enjoy the GAME!!!!!
+'''''''#  The code Below is a code for implementing a TIC_TAC_TOE game using OOPS and python.'''
 
-
-
-#CODE:
+# CODE:
 
 
 ALL_SPACES = list('123456789')  # The keys for a TTT board.
 X, O, BLANK = 'X', 'O', ' '  # Constants for string values.
-  
-  
-  
-  
-  
+
+
+
 
 def main():
-    #"""Runs a game of tic-tac-toe."""
-    print('Welcome to tic-tac-toe!')
-    gameBoard = TTTBoard()  # Create a TTT board object.
-    currentPlayer, nextPlayer = X, O # X goes first, O goes next.
-      
-      
-      
+    '''Runs a game of tic-tac-toe'''
 
+    print('Welcome to tic-tac-toe!')
+    game_board = TTTBoard()  # Create a TTT board object.
+    current_player, next_player = X, O  # X goes first, O goes next.
+
+    
+    
+    
+    
     while True:
-        print(gameBoard.getBoardStr())  # Display the board on the screen.
-          
+        print(game_board.get_board_str())  # Display the board on the screen.
 
         # Keep asking the player until they enter a number 1-9:
         move = None
-        while not gameBoard.isValidSpace(move):
-            print(f'What is {currentPlayer}\'s move? (1-9)')
+        while not game_board.is_valid_space(move):
+            print(f'What is {current_player}\'s move? (1-9)')
             move = input()
-        gameBoard.updateBoard(move, currentPlayer)  # Make the move.
-              
-              
+        game_board.update_board(move, current_player)  # Make the move.
+   
 
         # Check if the game is over:
-        if gameBoard.isWinner(currentPlayer):  # First check for victory.
-            print(gameBoard.getBoardStr())
-            print(currentPlayer + ' has won the game!')
+        if game_board.is_winner(current_player):  # First check for victory.
+            print(game_board.get_board_str())
+            print(current_player + ' has won the game!')
             break
-        elif gameBoard.isBoardFull():  # Next check for a tie.
-            print(gameBoard.getBoardStr())
+
+
+        elif game_board.is_board_full():  # Next check for a tie.
+            print(game_board.get_board_str())
             print('The game is a tie!')
             break
-        currentPlayer, nextPlayer = nextPlayer, currentPlayer  # Swap turns.
+
+        current_player, next_player = next_player, current_player  # Swap turns.
     print('Thanks for playing!')
-          
-          
-          
-          
-               # Implementing OOPS concepts, by first using the concept of class to creata a tic-tac-toe board!, the one below is the base class or parent class 
-               
+
+    # Implementing OOPS concepts by the use of a Class
+    
+    
+    
+    
+
+
 class TTTBoard:
-    def __init__(self, usePrettyBoard=False, useLogging=False):                 # Constructor
+    '''Contains all the functions reqired to perform the operation'''
+    def __init__(self, use_pretty_board=False, use_logging=False):  # Constructor
         """Create a new, blank tic tac toe board."""
+        self.use_logging = use_logging
+        self.use_pretty_board = use_pretty_board
         self._spaces = {}  # The board is represented as a Python dictionary.
         for space in ALL_SPACES:
             self._spaces[space] = BLANK  # All spaces start as blank.
+            
+            
+            
+            
 
-
-
-
-
-
-
-
-    def getBoardStr(self):
-        #"""Return a text-representation of the board."""
+    def get_board_str(self):
+        '''Return a text-representation of the board'''
         return f'''
       {self._spaces['1']}|{self._spaces['2']}|{self._spaces['3']}  1 2 3
       -+-+-
       {self._spaces['4']}|{self._spaces['5']}|{self._spaces['6']}  4 5 6
       -+-+-
       {self._spaces['7']}|{self._spaces['8']}|{self._spaces['9']}  7 8 9'''
-          
-          
-          
-          
-          
-          
+      
+      
+      
+      
 
-    def isValidSpace(self, space):
-       # """Returns True if the space on the board is a valid space number
-        #and the space is blank."""
+    def is_valid_space(self, space):
+        '''Returns True if the space on the board is a valid space number
+        # and the space is blank'''
         return space in ALL_SPACES and self._spaces[space] == BLANK
-        
-        
-        
-        
-        
-        
+      
+      
+      
+      
 
-    def isWinner(self, player):
-     #   """Return True if player is a winner on this TTTBoard."""
-        s, p = self._spaces, player # Shorter names as "syntactic sugar".
+    def is_winner(self, player):
+        '''Return True if player is a winner on this TTTBoard'''
+        s_arr, p_arr = self._spaces, player  # Shorter names as "syntactic sugar".
         # Check for 3 marks across the 3 rows, 3 columns, and 2 diagonals.
-        return ((s['1'] == s['2'] == s['3'] == p) or                     # Across the top
-                (s['4'] == s['5'] == s['6'] == p) or                      # Across the middle
-                (s['7'] == s['8'] == s['9'] == p) or                     # Across the bottom
-                (s['1'] == s['4'] == s['7'] == p) or                    # Down the left
-                (s['2'] == s['5'] == s['8'] == p) or                   # Down the middle
-                (s['3'] == s['6'] == s['9'] == p) or                     # Down the right
-                (s['3'] == s['5'] == s['7'] == p) or                      # Diagonal
-                (s['1'] == s['5'] == s['9'] == p))                        # Diagonal
-                
-                
-                
-                
-                
-                
+        return ((s_arr['1'] == s_arr['2'] == s_arr['3'] == p_arr) or  # Across the top
+                (s_arr['4'] == s_arr['5'] == s_arr['6'] == p_arr) or  # Across the middle
+                (s_arr['7'] == s_arr['8'] == s_arr['9'] == p_arr) or  # Across the bottom
+                (s_arr['1'] == s_arr['4'] == s_arr['7'] == p_arr) or  # Down the left
+                (s_arr['2'] == s_arr['5'] == s_arr['8'] == p_arr) or  # Down the middle
+                (s_arr['3'] == s_arr['6'] == s_arr['9'] == p_arr) or  # Down the right
+                (s_arr['3'] == s_arr['5'] == s_arr['7'] == p_arr) or  # Diagonal
+                (s_arr['1'] == s_arr['5'] == s_arr['9'] == p_arr))  # Diagonal
+      
+      
+      
+      
 
-    def isBoardFull(self):
-      #  """Return True if every space on the board has been taken."""
+    def is_board_full(self):
+        '''Return True if every space on the board has been taken'''
         for space in ALL_SPACES:
             if self._spaces[space] == BLANK:
                 return False  # If a single space is blank, return False.
         return True  # No spaces are blank, so return True.
-                  
-                  
-                  
-                  
-                  
-                  
+      
+      
+      
+      
 
-    def updateBoard(self, space, player):
-       # """Sets the space on the board to player."""
+    def update_board(self, space, player):
+        '''Sets the space on the board to player'''
         self._spaces[space] = player
         
         
         
 
 
-class TTiBoard(TTTBoard):                                                  # Derieved Class or Inherited class
-    def __init__(posn):
-        self.posn=posn
+class TTiBoard(TTTBoard):  # Derieved Class or Inherited class
+    '''This is the derieved class of the TTTBoard class'''
+    def __init__(self):
+        self.posn = self
+
+        # INVOKING the CONSTRUCTOR of the PARENT class
+        TTTBoard.__init__(self, use_pretty_board=False, use_logging=False)
         
-        #INVOKING the CONSTRUCTOR of the PARENT class
-        TTTBoard.__init__(self, usePrettyBoard=False, useLogging=False)
-
-
-
-       
+        
 
 
 
 
- # Call main() if this module is run, but not when imported.
+# Call main() if this module is run, but not when imported.
 
 
- 
 if __name__ == '__main__':
     main()
-
-
-
-   
