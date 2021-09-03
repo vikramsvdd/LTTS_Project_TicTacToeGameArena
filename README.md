@@ -4,7 +4,7 @@ This Project aims in creating a TIC-TAC-TOE game, that is played between two peo
 # Project Description
 In this project, object oriented programming concept within python is used when developing this project. This project contains two modules, the main function and class TTT board.
 
-  **1. main function:
+  # 1. main function:
     
        a. This function basically starts the game.
        
@@ -16,7 +16,7 @@ In this project, object oriented programming concept within python is used when 
        b5.Swapping turns and,
        b6. Checking for a victory or a tie. For achieving each of these operations, the main function uses the help of a class, which contains specific functions to leverage this operation.
        
-   **2. Class TTTBoard:
+   # 2. Class TTTBoard:
         
         This is the class that contains all the specific functions within it, to perform the operations required by the main function, to create the game. It contains a constuctor which is parameterised called init and has a derieved class to assist it with certain operations. The functions are below.
         
