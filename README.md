@@ -80,7 +80,7 @@ SF Id. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 | No. | Challenge | Solution
 |-----|-----------|--------
 |1. | Output was not matching the expectation | Modified the logic of the program and code itself 
-|2. | Game suddenly gets exited in the middle | Modified a segment of the code and eliminated the usage of conio.h |
+|2. | Game suddenly gets exited in the middle | Modified a segment of the code and eliminated the usage of a library called pudb |
 
 
 ## Reference
