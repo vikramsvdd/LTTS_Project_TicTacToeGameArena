@@ -90,11 +90,14 @@ SF Id. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 
 
 
-## Results:
-  ![o/p 1](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img1.PNG)
-  ![o/p 2](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img2.PNG)
-  ![o/p 3](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img3.PNG)
-  ![o/p 4](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img4.PNG)
+## Some Snapshots of Results:
+![o/p 1](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img1.PNG)
+
+![o/p 2](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img2.PNG)
+ 
+![o/p 3](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img3.PNG)
+ 
+![o/p 4](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img4.PNG)
 
 
 
