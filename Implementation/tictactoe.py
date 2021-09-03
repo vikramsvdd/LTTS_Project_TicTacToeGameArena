@@ -122,6 +122,11 @@ class TTTBoard:
         self._spaces[space] = player
         
         
+    def print_mark():
+        return O;
+
+    def print_markx():
+        return X     
         
 
 
@@ -132,6 +137,8 @@ class TTiBoard(TTTBoard):  # Derieved Class or Inherited class
 
         # INVOKING the CONSTRUCTOR of the PARENT class
         TTTBoard.__init__(self, use_pretty_board=False, use_logging=False)
+        
+        
         
         
 
