@@ -35,7 +35,7 @@ def main():
         if game_board.is_winner(current_player):  # First check for victory.
             print(game_board.get_board_str())
             print(current_player + ' has won the game!')
-            break
+            
 
 
         elif game_board.is_board_full():  # Next check for a tie.
