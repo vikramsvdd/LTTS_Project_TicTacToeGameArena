@@ -7,8 +7,6 @@ ALL_SPACES = list('123456789')  # The keys for a TTT board.
 X, O, BLANK = 'X', 'O', ' '  # Constants for string values.
 
 
-
-
 def main():
     '''Runs a game of tic-tac-toe'''
 
@@ -16,10 +14,6 @@ def main():
     game_board = TTTBoard()  # Create a TTT board object.
     current_player, next_player = X, O  # X goes first, O goes next.
 
-    
-    
-    
-    
     while True:
         print(game_board.get_board_str())  # Display the board on the screen.
 
@@ -29,13 +23,12 @@ def main():
             print(f'What is {current_player}\'s move? (1-9)')
             move = input()
         game_board.update_board(move, current_player)  # Make the move.
-   
 
         # Check if the game is over:
         if game_board.is_winner(current_player):  # First check for victory.
             print(game_board.get_board_str())
             print(current_player + ' has won the game!')
-            
+            break
 
 
         elif game_board.is_board_full():  # Next check for a tie.
@@ -47,10 +40,6 @@ def main():
     print('Thanks for playing!')
 
     # Implementing OOPS concepts by the use of a Class
-    
-    
-    
-    
 
 
 class TTTBoard:
@@ -62,10 +51,6 @@ class TTTBoard:
         self._spaces = {}  # The board is represented as a Python dictionary.
         for space in ALL_SPACES:
             self._spaces[space] = BLANK  # All spaces start as blank.
-            
-            
-            
-            
 
     def get_board_str(self):
         '''Return a text-representation of the board'''
@@ -75,19 +60,11 @@ class TTTBoard:
       {self._spaces['4']}|{self._spaces['5']}|{self._spaces['6']}  4 5 6
       -+-+-
       {self._spaces['7']}|{self._spaces['8']}|{self._spaces['9']}  7 8 9'''
-      
-      
-      
-      
 
     def is_valid_space(self, space):
         '''Returns True if the space on the board is a valid space number
         # and the space is blank'''
         return space in ALL_SPACES and self._spaces[space] == BLANK
-      
-      
-      
-      
 
     def is_winner(self, player):
         '''Return True if player is a winner on this TTTBoard'''
@@ -101,10 +78,6 @@ class TTTBoard:
                 (s_arr['3'] == s_arr['6'] == s_arr['9'] == p_arr) or  # Down the right
                 (s_arr['3'] == s_arr['5'] == s_arr['7'] == p_arr) or  # Diagonal
                 (s_arr['1'] == s_arr['5'] == s_arr['9'] == p_arr))  # Diagonal
-      
-      
-      
-      
 
     def is_board_full(self):
         '''Return True if every space on the board has been taken'''
@@ -112,22 +85,19 @@ class TTTBoard:
             if self._spaces[space] == BLANK:
                 return False  # If a single space is blank, return False.
         return True  # No spaces are blank, so return True.
-      
-      
-      
-      
 
     def update_board(self, space, player):
         '''Sets the space on the board to player'''
         self._spaces[space] = player
-        
-        
-    def print_mark():
-        return O;
 
-    def print_markx():
-        return X     
-        
+    def print_mark(self):
+        '''Used to place the mark 0 on the board'''
+        return O
+
+    def print_markx(self):
+        '''Used to place the mark X on the board'''
+        return X
+
 
 
 class TTiBoard(TTTBoard):  # Derieved Class or Inherited class
@@ -137,10 +107,6 @@ class TTiBoard(TTTBoard):  # Derieved Class or Inherited class
 
         # INVOKING the CONSTRUCTOR of the PARENT class
         TTTBoard.__init__(self, use_pretty_board=False, use_logging=False)
-        
-        
-        
-        
 
 
 
