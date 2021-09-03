@@ -3,7 +3,7 @@ This Project aims in creating a TIC-TAC-TOE game, that is played between two peo
 
 
 
-![TIC_TAC_TOE](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/unnamed.png)
+![TIC_TAC_TOE](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/tictactoecool.png)
 
 # Project Description
 In this project, object oriented programming concept within python is used when developing this project. This project contains two modules, the main function and class TTT board.
