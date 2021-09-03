@@ -85,7 +85,17 @@ SF Id. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 | No. | Challenge | Solution
 |-----|-----------|--------
 |1. | Output was not matching the expectation | Modified the logic of the program and code itself 
-|2. | Game suddenly gets exited in the middle | Modified a segment of the code and eliminated the usage of a library called pudb |
+|2. | Game suddenly gets exited in the middle | Modified a segment of the code and eliminated the usage of a library called pudb | 
+
+
+
+
+## Results:
+  ![o/p 1](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img1.PNG)
+  ![o/p 2](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img2.PNG)
+  ![o/p 3](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img3.PNG)
+  ![o/p 4](https://github.com/vikramsvdd/TicTacToeGameArena/blob/main/Images(output)/img4.PNG)
+
 
 
 ## Reference
