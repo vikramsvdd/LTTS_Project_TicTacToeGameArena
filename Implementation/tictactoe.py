@@ -90,12 +90,12 @@ class TTTBoard:
         '''Sets the space on the board to player'''
         self._spaces[space] = player
 
-    
+    @property
     def print_mark(self):
         '''Used to place the mark 0 on the board'''
         return O
 
-    
+    @property
     def print_markx(self):
         '''Used to place the mark X on the board'''
         return X
