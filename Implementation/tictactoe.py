@@ -94,7 +94,7 @@ class TTTBoard:
         '''Used to place the mark 0 on the board'''
         return O
 
-    def print_markx(self):
+   def print_markx(self):
         '''Used to place the mark X on the board'''
         return X
 
