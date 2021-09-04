@@ -2,7 +2,7 @@
 This Project aims in creating a TIC-TAC-TOE game, that is played between two people. Based in the two people's moves, the status of the game will be decided i.e a win or a tie!
 
 
-[![Python Build](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/python-build.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/python-build.yml)| [![Contribution Check - Git Inspector](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/git-inspector.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/git-inspector.yml) | [![Python application](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pytest-application.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pytest-application.yml) | 
+[![Python Build](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/python-build.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/python-build.yml)|[![Contribution Check - Git Inspector](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/git-inspector.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/git-inspector.yml) |[![Python application](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pytest-application.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pytest-application.yml) |[![Pylint](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pylint.yml/badge.svg)](https://github.com/vikramsvdd/TicTacToeGameArena/actions/workflows/pylint.yml) 
 
 
 
