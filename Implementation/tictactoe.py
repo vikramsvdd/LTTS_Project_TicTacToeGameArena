@@ -29,8 +29,6 @@ def main():
             print(game_board.get_board_str())
             print(current_player + ' has won the game!')
             
-            
-            
         elif game_board.is_board_full():  # Next check for a tie.
             print(game_board.get_board_str())
             print('The game is a tie!')
